@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.src.convertspaces</string>
+	<key>category</key>
+	<string>Utilities</string>
+	<key>connections</key>
+	<dict>
+		<key>036DE225-3F56-4BF7-9DEF-FBCCD1869DBB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8543CC16-9252-48F5-A5B4-20D9CA0DB5F0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>36FC9228-C72D-4C73-A390-8B25FF8E7B07</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A7343886-7D60-4B34-AE4E-7739177724F9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2764C9D2-7EF0-40AA-AEE6-2DBCC116C7FC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>212F2A46-0436-4843-8170-F01C5D6D5B46</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2C8458EF-0C48-4F36-BAE8-D4A9BE6B73D4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>722A633C-A77D-435E-B9AF-0B9CE2145556</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>47B8E076-6B3D-4D99-8DBA-4177AC952912</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2764C9D2-7EF0-40AA-AEE6-2DBCC116C7FC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>_button1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>722A633C-A77D-435E-B9AF-0B9CE2145556</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>036DE225-3F56-4BF7-9DEF-FBCCD1869DBB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8543CC16-9252-48F5-A5B4-20D9CA0DB5F0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>47B8E076-6B3D-4D99-8DBA-4177AC952912</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Stephen Christy</string>
+	<key>description</key>
+	<string>Converts two spaces to one space in selected text</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Double space to single space</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>The revised text has been copied to the clipboard</string>
+				<key>title</key>
+				<string>Double space to single space</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>212F2A46-0436-4843-8170-F01C5D6D5B46</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>2764C9D2-7EF0-40AA-AEE6-2DBCC116C7FC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Convert two spaces to one space</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>2C8458EF-0C48-4F36-BAE8-D4A9BE6B73D4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>button1</key>
+				<string>Copy to clipboard</string>
+				<key>button2</key>
+				<string>Close without doing anything</string>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string>What would you like to do with the revised text?</string>
+				<key>title</key>
+				<string>Double space to single space</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>47B8E076-6B3D-4D99-8DBA-4177AC952912</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>{var:findRegex}</string>
+				<key>regexcaseinsensitive</key>
+				<true/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string>{var:replaceRegex}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>8543CC16-9252-48F5-A5B4-20D9CA0DB5F0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>{var:findRegex}</string>
+						<key>outputlabel</key>
+						<string>OK</string>
+						<key>uid</key>
+						<string>36FC9228-C72D-4C73-A390-8B25FF8E7B07</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Error</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>036DE225-3F56-4BF7-9DEF-FBCCD1869DBB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>findRegex</key>
+					<string>{var:regexStart}{var:precedingCharacters}{var:regexEnd2spaces}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>722A633C-A77D-435E-B9AF-0B9CE2145556</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>button1</key>
+				<string>Close</string>
+				<key>button2</key>
+				<string></string>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string>No double spaces were found.
+
+You were searching for double spaces after words and each of {var:precedingCharacters} \(which you can change in the workflow configuration).
+
+
+There is nothing to change in the selected text.</string>
+				<key>title</key>
+				<string>Double space to single space</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>A7343886-7D60-4B34-AE4E-7739177724F9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Usage
+
+This workflow is a Universal Action which takes selected text and converts certain double spaces in the text to single spaces. You then have the choice of copying the amended text to the clipboard or simply quitting the workflow.
+
+The conversion works as follows:
+
+- a double space following any *word* will be automatically converted to a single space;
+- a double space following any specific *character* will be converted to a single space.
+
+The characters which will trigger conversion if followed by a double space are listed in the user configuration (so that you can change them if you wish). The default characters following which a double space will be changed to a single space are:
+
+- a full stop (period);
+- a comma;
+- a question mark;
+- a semi-colon;
+- a colon;
+- a closing parenthesis;
+- a closing angle bracket;
+- closing (non-smart) double quotation marks;
+- closing smart double quotation marks;
+- a closing (non-smart) single quotation mark;
+- a closing smart single quotation mark;
+- an exclamation mark;
+- a percentage symbol.
+
+You can change or add to the characters in the user configuration of the workflow. Don't separate the characters there by spaces or by any other character. There is an option to reset them to the defaults if you need to do that at any time.
+---
+# Note
+
+Three Environment Variables are used to assemble the regular expressions used in the Replace Action. If you delete or amend them the workflow will almost certainly die a tragic death.</string>
+	<key>uidata</key>
+	<dict>
+		<key>036DE225-3F56-4BF7-9DEF-FBCCD1869DBB</key>
+		<dict>
+			<key>note</key>
+			<string>Check for failed find in case there are no double spaces</string>
+			<key>xpos</key>
+			<real>312</real>
+			<key>ypos</key>
+			<real>65</real>
+		</dict>
+		<key>212F2A46-0436-4843-8170-F01C5D6D5B46</key>
+		<dict>
+			<key>note</key>
+			<string>A notification because you need to know something has been done</string>
+			<key>xpos</key>
+			<real>875</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>2764C9D2-7EF0-40AA-AEE6-2DBCC116C7FC</key>
+		<dict>
+			<key>note</key>
+			<string>Simply copy the revised text to the clipboard</string>
+			<key>xpos</key>
+			<real>710</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>2C8458EF-0C48-4F36-BAE8-D4A9BE6B73D4</key>
+		<dict>
+			<key>note</key>
+			<string>A Universal Action that works on selected text</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>45</real>
+		</dict>
+		<key>47B8E076-6B3D-4D99-8DBA-4177AC952912</key>
+		<dict>
+			<key>note</key>
+			<string>The choice after the text is revised</string>
+			<key>xpos</key>
+			<real>550</real>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>722A633C-A77D-435E-B9AF-0B9CE2145556</key>
+		<dict>
+			<key>note</key>
+			<string>Set up the Find RegEx &amp; pass through the selected text</string>
+			<key>xpos</key>
+			<real>200</real>
+			<key>ypos</key>
+			<real>75</real>
+		</dict>
+		<key>8543CC16-9252-48F5-A5B4-20D9CA0DB5F0</key>
+		<dict>
+			<key>note</key>
+			<string>The find &amp; replace using RegEx</string>
+			<key>xpos</key>
+			<real>440</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>A7343886-7D60-4B34-AE4E-7739177724F9</key>
+		<dict>
+			<key>note</key>
+			<string>Helpful error message</string>
+			<key>xpos</key>
+			<real>440</real>
+			<key>ypos</key>
+			<real>165</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>.,?;:)&gt;"”'’!%</string>
+				<key>placeholder</key>
+				<string>.,?;:)&gt;"”'’!%</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>You can change the characters here to add any character which you don't want to be followed by a double space (or delete any character you do want to be followed by a double space).
+
+Don't separate the chosen characters by a space or any other irrelevant character.</string>
+			<key>label</key>
+			<string>Characters to precede single space</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>precedingCharacters</string>
+		</dict>
+	</array>
+	<key>variables</key>
+	<dict>
+		<key>regexEnd2spaces</key>
+		<string>])  +</string>
+		<key>regexStart</key>
+		<string>([\w</string>
+		<key>replaceRegex</key>
+		<string>$1 </string>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
